@@ -1,0 +1,21 @@
+
+(cl:in-package :asdf)
+
+(defsystem "msg-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils )
+  :components ((:file "_package")
+    (:file "CameraControl" :depends-on ("_package_CameraControl"))
+    (:file "_package_CameraControl" :depends-on ("_package"))
+    (:file "DepthData" :depends-on ("_package_DepthData"))
+    (:file "_package_DepthData" :depends-on ("_package"))
+    (:file "GpsData" :depends-on ("_package_GpsData"))
+    (:file "_package_GpsData" :depends-on ("_package"))
+    (:file "ImuData" :depends-on ("_package_ImuData"))
+    (:file "_package_ImuData" :depends-on ("_package"))
+    (:file "MotionControl" :depends-on ("_package_MotionControl"))
+    (:file "_package_MotionControl" :depends-on ("_package"))
+    (:file "PecControl" :depends-on ("_package_PecControl"))
+    (:file "_package_PecControl" :depends-on ("_package"))
+    (:file "SensorsData" :depends-on ("_package_SensorsData"))
+    (:file "_package_SensorsData" :depends-on ("_package"))
+  ))

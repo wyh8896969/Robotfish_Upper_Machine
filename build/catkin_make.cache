@@ -1,0 +1,2 @@
+controller:data_handle:dynamixel_tools:launch:motors:msg:sensors:transceiver:utils
+-DCATKIN_DEVEL_PREFIX=/home/pi/robotfish/devel -DCMAKE_INSTALL_PREFIX=/home/pi/robotfish/install -G Unix Makefiles

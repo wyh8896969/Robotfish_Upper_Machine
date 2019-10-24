@@ -1,0 +1,8 @@
+prefix=/home/pi/robotfish/install
+
+Name: sensors
+Description: Description of sensors
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pi/robotfish/install/lib 
+Requires: message_runtime rospy std_msgs

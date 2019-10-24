@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="motors" type="pectoral.py" name="pec_fin"/>
+    <node pkg="motors" type="thruster.py" name="thruster" output="screen" />
+    <node pkg="transceiver" type="transceiver.py" name="transceiver" output="screen"/>
+</launch>

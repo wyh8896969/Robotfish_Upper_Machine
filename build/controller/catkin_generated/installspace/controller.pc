@@ -1,0 +1,8 @@
+prefix=/home/pi/robotfish/install
+
+Name: controller
+Description: Description of controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pi/robotfish/install/lib 
+Requires: message_runtime rospy std_msgs

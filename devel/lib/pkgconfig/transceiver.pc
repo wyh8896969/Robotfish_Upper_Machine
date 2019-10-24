@@ -1,0 +1,8 @@
+prefix=/home/pi/robotfish/devel
+
+Name: transceiver
+Description: Description of transceiver
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pi/robotfish/devel/lib 
+Requires: 

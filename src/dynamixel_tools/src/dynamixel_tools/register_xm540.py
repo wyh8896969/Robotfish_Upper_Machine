@@ -1,0 +1,82 @@
+#!/usr/bin/env python
+#encoding:utf-8
+
+# Control table address
+ADDR_MODULE_NUMBER = 0   #
+BYTE_MODULE_NUMBER = 2
+ADDR_ID = 7     # 1 byte
+BYTE_ID = 1
+ADDR_DRIVE_MODE = 10    # 1 byte
+BYTE_DRIVE_MODE = 1
+ADDR_OPERATING_MODE = 11    # 1 byte
+BYTE_OPERATING_MODE = 1
+ADDR_HOMING_OFFSET = 20     # 4 bytes
+BYTE_HOMING_OFFSET = 4
+
+ADDR_TORQUE_ENABLE = 64     # 1 byte
+BYTE_TORQUE = 1
+
+BYTE_PWM = 2
+ADDR_GOAL_PWM = 100     # 2 bytes
+ADDR_GOAL_VELOCITY = 104    # 4 bytes
+BYTE_VELOCITY = 4
+ADDR_GOAL_CURRENT = 102     # 2 bytes
+BYTE_CURRENT = 2
+ADDR_GOAL_POSITION = 116    # 4 bytes
+BYTE_POSITION = 4
+
+ADDR_PRESENT_POSITION = 132  # 4 bytes
+ADDR_PRESENT_PWM = 124      # 2 bytes
+ADDR_PRESENT_VOLTAGE = 144
+BYTE_VOLTAGE = 2
+ADDR_PRESENT_VELOCITY = 128
+ADDR_PRESENT_CURRENT = 126
+
+ADDR_LIMIT_PWM = 36     # 2 bytes
+ADDR_LIMIT_CURRENT = 38  # 2 bytes
+ADDR_LIMIT_VELOCITY = 44    # 4 bytes
+ADDR_MAX_VOLTAGE = 32
+ADDR_MIN_VOLTAGE = 34
+ADDR_MAX_POSITION = 48      # 4 bytes
+ADDR_MIN_POSITION = 52      # 4 bytes
+
+BYTE_PID = 2
+ADDR_POS_D_GAIN = 80    # 2 bytes
+ADDR_POS_I_GAIN = 82    # 2 bytes
+ADDR_POS_P_GAIN = 84    # 2 bytes
+
+ADDR_PROFILE_VELOCITY = 112  # 4 bytes
+ADDR_PROFILE_ACCELERATION = 108
+BYTE_ACCELERATION = 4
+
+ADDR_MOVE = 122     # 1 byte
+BYTE_MOVE = 1
+ADDR_MOVING_STATUS = 123    # 1 byte
+
+
+# torque control
+# when torque_enable is enabled, all data in the EEPROM will be protected
+TORQUE_ENABLE = 1
+TORQUE_DISABLE = 0
+# operating mode
+MODE_CURRENT = 0
+MODE_VELOCITY = 1
+MODE_POSITION = 3
+MODE_EXT_POSI = 4
+MODE_CURRENT_BASED_POSI = 5
+MODE_PWM = 16
+
+# position
+POS_TOP = 2048
+POS_BOTTOM = 0
+
+# default setting
+DXL_ID = 1  # Dynamixel ID :1
+# 波特率设为19200无法使能torque
+
+MINIMUM_POSITION = 10
+MAXIMUM_POSITION = 4000
+MOVING_STATUS_THRESHOLD = 20
+
+# protocol version
+PROTOCOL_VERSION = 2.0

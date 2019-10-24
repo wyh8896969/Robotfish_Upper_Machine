@@ -1,0 +1,8 @@
+prefix=/home/pi/robotfish/install
+
+Name: dynamixel_tools
+Description: Description of dynamixel_tools
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pi/robotfish/install/lib 
+Requires: 

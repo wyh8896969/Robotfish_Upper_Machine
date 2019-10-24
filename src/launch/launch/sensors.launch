@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="sensors" type="sensor_imu.py" name="imu" />
+    <node pkg="sensors" type="sensor_depth.py" name="depth" />
+    <node pkg="sensors" type="combination.py" name="combine" />
+    
+    <!--<node pkg="sensors" type="sensor_gps.py" name="gps"/>-->
+
+    <node pkg="sensors" type="camera.py" name="camera" output="screen"/>
+    <node pkg="transceiver" type="transceiver.py" name="transceiver" output="screen"/>
+</launch>

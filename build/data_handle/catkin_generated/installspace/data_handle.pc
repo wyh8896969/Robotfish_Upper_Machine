@@ -1,0 +1,8 @@
+prefix=/home/pi/robotfish/install
+
+Name: data_handle
+Description: Description of data_handle
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pi/robotfish/install/lib 
+Requires: 

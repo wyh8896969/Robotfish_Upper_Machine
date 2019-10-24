@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="sensors" type="camera.py" name="camera" output="screen"/>
+    <node pkg="transceiver" type="transceiver.py" name="transceiver" output="screen"/>
+</launch>
